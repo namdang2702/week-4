@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.header {
+  width: 100%;
+  height: 250px;
+  background: green;
+  position: relative;  
+  color: white;
+  text-align: center;
+  top: 70px;
+}
+.header__second-item {
+  height: 80px;
+  width: 100px;
+  background: purple;
+  margin-left: auto;
+  color: white
+}
+
+.header__third-item {
+  height: 80px;
+  width: 100%;
+  background: brown;
+  margin-left: auto;
+  position: sticky;
+  top: 0;
+  z-index:2;
+  color: white
+}
+
+.header__item {
+  height: 150px;
+  width: 400px;
+  background: tomato;
+  position: fixed;
+  top: 50px;
+  z-index: 1;
+   color: white
+}
+
+body {
+  font-size: 100%;
+  font-family: "Roboto", sans-serif;
+  color: #3d3536;
+  background-color: yellow;
+}
+
+body, html {
+  /* important */
+  height: 100%;
+}
+
+.container {
+  /* you need to assign a min-height to the main content so that the children can inherit it*/
+  height: 100%;
+  z-index: 1;
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/181085/track_riders_bg01.jpg");
+}
+ .container2 {
+  
+   height: 100%;
+  z-index: 1;
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/181085/track_riders_bg01.jpg");
+  }
+
+
+.keepfixedimagehere {
+  position: relative;
+  min-height: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 1;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  clip-path: circle(350px at 50% 50%);
+  background-attachment: fixed;
+  background-image: url("images/image3.jpg");
+}
+.keepfixedimagehere2 {
+
+  position: relative;
+  min-height: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 1;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  border-radius: 100px;
+  background-attachment: fixed;
+  background-image: url("images/image2.jpg");
+ 
+}
+
+.scrolling {
+  position: relative;
+height:50%;
+background-color: blue;
+  line-height: 1.6;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  z-index: .8;
+   text-align: center;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 8em 0;
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 2;
+    font-weight: 300;
+
+}
+
+.scrolling2 {
+  position: relative;
+  min-height: 50%;
+background-color: green;
+  line-height: 1.6;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  z-index: .8;
+   text-align: center;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 8em 0;
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 2;
+    font-weight: 300;
+  
+}
+
+.absolutetext {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 90%;
+  max-width: 1170px;
+  text-align: center;
+  font-size: 30px;
+  font-size: 1.875rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  color: red;
+   font-size: 48px;
+    font-weight: 300;
+  
+}
+
+.fixedtext {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 90%;
+  max-width: 1170px;
+  text-align: center;
+  font-size: 30px;
+  font-size: 1.875rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  color: white;
+   font-size: 48px;
+    font-weight: 300;
+  
+}
+
+ 
